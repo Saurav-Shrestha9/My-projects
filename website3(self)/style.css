@@ -1,0 +1,706 @@
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  background: #1e1e1e;
+}
+
+#go-to-top {
+  border: none;
+  background: black;
+  color: #ffffff;
+  height: 60px;
+  width: 60px;
+  border-radius: 40px;
+  margin-top: 10px;
+  position: absolute;
+  right: 10px;
+}
+#go-to-top #arrow {
+  display: none;
+}
+#go-to-top:hover {
+  cursor: pointer;
+  border: 3px solid black;
+  background: white;
+  transition-duration: 0.6s;
+}
+#go-to-top:hover span {
+  display: none;
+}
+#go-to-top:hover #arrow {
+  display: block;
+  font-size: 35px;
+  margin-bottom: 7px;
+  color: black;
+}
+
+body {
+  font-family: "Poppins";
+  margin-left: 1.2em;
+  padding: 0;
+  padding-bottom: 200px;
+  margin-bottom: 0;
+}
+
+.exit-btn {
+  height: 40px;
+  position: absolute;
+  top: -5px;
+  right: 5px;
+}
+
+#prem-btn:hover {
+  outline: 3px solid rgb(51, 147, 237);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  /*.hamburgerMenu{
+      margin-top:-.4em;
+      margin-right:.4em;
+
+      &:hover{
+          cursor: pointer;
+      }
+  }*/
+}
+.header span {
+  letter-spacing: 0.2em;
+  font-size: 1.1rem;
+}
+.header svg {
+  margin-top: 0.3em;
+  margin-right: 0.4em;
+}
+.header svg:hover {
+  cursor: pointer;
+}
+.header nav {
+  position: fixed;
+  background: #f2f2f2;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 40%;
+  padding-top: 30px;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0s ease-in-out;
+}
+.header nav img {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  height: 27px;
+}
+.header nav img:hover {
+  cursor: pointer;
+}
+.header ul {
+  list-style-type: none;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+.header ul li {
+  margin-bottom: 15px;
+}
+.header ul li:hover {
+  background: rgb(208, 206, 206);
+}
+.header ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5em 1.25em;
+  display: block;
+}
+
+section {
+  text-align: center;
+  margin-top: 4em;
+}
+
+section.hero-images {
+  display: none;
+}
+
+section.hero h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-bottom: 0.6rem;
+}
+section.hero p {
+  color: #141414;
+  font-size: 0.8rem;
+  margin-bottom: 0.1em;
+  margin-top: 0.3em;
+}
+section.hero button {
+  border: none;
+  border-radius: 3em;
+  color: white;
+  background: black;
+  padding: 0.8em 1.7em 0.8em 1.7em;
+  margin-top: 2.2em;
+}
+section.hero button:hover {
+  cursor: pointer;
+  outline: solid black 3px;
+  background: white;
+  color: #1e1e1e;
+}
+
+.wrapper {
+  display: flex;
+  color: #c4c4c4;
+  margin-bottom: 0;
+}
+.wrapper .rect {
+  background: #c4c4c4;
+  height: 0.1em;
+  width: 1.2em;
+  margin-top: 1em;
+  margin-right: 0.2em;
+}
+.wrapper .motive {
+  text-align: left;
+  font-size: 0.6rem;
+  letter-spacing: 0.5em;
+}
+
+section.info {
+  margin-top: 5em;
+}
+section.info .testimonial {
+  margin-top: 0.4em;
+  text-align: left;
+}
+section.info .testimonial h2 {
+  margin: 0;
+}
+section.info .testimonial .desc {
+  font-size: 0.8rem;
+  margin-top: 1em;
+}
+section.info .testimonial .t1, section.info .testimonial .t2 {
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+  border-bottom: solid;
+  border-bottom-width: 0.1em;
+  border-bottom-color: #ececec;
+}
+section.info .testimonial .t1 span, section.info .testimonial .t2 span {
+  font-weight: 400;
+  margin-right: 0.2rem;
+  color: rgb(215, 215, 215);
+}
+section.info .testimonial .t1 span:hover, section.info .testimonial .t2 span:hover {
+  cursor: pointer;
+}
+
+section.services {
+  background: #f2f2f2;
+  margin-top: 5em;
+  text-align: left;
+}
+section.services .service-title {
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+section.services .service-description {
+  margin-top: 0.5em;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-bottom: 2em;
+}
+
+section.case-study {
+  text-align: left;
+}
+section.case-study h2 {
+  text-transform: capitalize;
+}
+section.case-study .nav2 ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+section.case-study .nav2 ul li {
+  margin-bottom: 1em;
+}
+section.case-study .nav2 ul li:hover {
+  background: rgb(230, 228, 228);
+  cursor: pointer;
+}
+section.case-study .nav2 ul a {
+  text-decoration: none;
+  color: black;
+}
+section.case-study .nav2 p:hover {
+  cursor: pointer;
+}
+section.case-study .nav2 p:hover span {
+  text-decoration: underline;
+}
+section.case-study .ref-img {
+  display: none;
+}
+
+section.our-experts {
+  margin-top: 5em;
+}
+section.our-experts .sec-name {
+  font-size: 0.6rem;
+  letter-spacing: 0.5em;
+  color: #c4c4c4;
+}
+section.our-experts h2 {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+section.our-experts .pro-info {
+  /*display:flex;
+  flex:1fr 1fr;
+  margin-bottom:0px;
+  margin-top:20px;
+  gap:20px;
+  */
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-top: 20px;
+}
+section.our-experts .pro-info .profile {
+  width: 150px;
+  height: 150px;
+  background: #f2f2f2;
+  margin: 10px auto;
+  border-radius: 20px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+section.our-experts .pro-info .profile .profile-pic {
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  background: gray;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: whitesmoke;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
+}
+section.our-experts .pro-info .profile .name {
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+section.our-experts .pro-info .profile .post {
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+}
+section.our-experts .pro-info .profile .social {
+  font-size: 0.45rem;
+}
+
+section.skills {
+  background: #f2f2f2;
+}
+section.skills h2 {
+  text-transform: capitalize;
+}
+section.skills .stats {
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: left;
+  position: relative;
+}
+section.skills .stats .percent {
+  position: absolute;
+  right: 23%;
+}
+section.skills .stats .percent2 {
+  position: absolute;
+  right: 19%;
+}
+section.skills .stats .percent3 {
+  position: absolute;
+  right: 20%;
+}
+section.skills .stats .percent4 {
+  position: absolute;
+  right: 30.5%;
+}
+section.skills .percentage-bar .pb1 {
+  height: 3px;
+  width: 90%;
+  background: gray;
+  position: relative;
+}
+section.skills .percentage-bar .pb1-2 {
+  height: 3px;
+  width: 90%;
+  background: gray;
+  position: relative;
+}
+section.skills .percentage-bar .pb2 {
+  height: 3px;
+  width: 81%;
+  background: black;
+  position: absolute;
+}
+section.skills .percentage-bar .pb3 {
+  height: 3px;
+  width: 85.5%;
+  background: black;
+  position: absolute;
+}
+section.skills .percentage-bar .pb4 {
+  height: 3px;
+  width: 83.7%;
+  background: black;
+  position: absolute;
+}
+section.skills .percentage-bar .pb5 {
+  height: 3px;
+  width: 72%;
+  background: black;
+  position: absolute;
+}
+section.skills .video {
+  width: 100%;
+  height: 60vh;
+  background: lightblue;
+  margin-top: 3em;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.skills .ceo {
+  background: white;
+  padding-top: 5em;
+}
+section.skills .ceo .dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+section.skills .ceo .dots .d1 {
+  height: 7px;
+  width: 7px;
+  border-radius: 4px;
+  background: rgb(170, 169, 169);
+}
+section.skills .ceo .dots .d2 {
+  height: 4px;
+  width: 4px;
+  border-radius: 3px;
+  background: rgb(223, 223, 223);
+  margin-left: 18px;
+}
+section.skills .ceo .feedback {
+  font-size: 0.8rem;
+}
+section.skills .ceo .ceo-pic {
+  width: 40px;
+  height: 40px;
+  background: gray;
+  border-radius: 30px;
+  margin-left: 46%;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+section.skills .ceo .ceo-name {
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0;
+}
+section.skills .ceo .ceo-info {
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+  margin-top: 1px;
+}
+
+section.last .non-premium {
+  display: flex;
+  margin-bottom: 50px;
+}
+section.last .non-premium .plans {
+  margin-left: 5px;
+}
+section.last .plans {
+  background: lightblue;
+  width: 56%;
+  border-radius: 20px;
+  margin-left: 25%;
+}
+section.last .plans .head {
+  padding-top: 15px;
+}
+section.last .plans div {
+  height: 100px;
+  width: 100px;
+  border-radius: 60px;
+  background: #c4c4c4;
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  margin: 15px auto 15px auto;
+}
+section.last .plans .price {
+  margin-bottom: 0px;
+}
+section.last .plans .price .p1 {
+  font-size: 15px;
+  color: #141414;
+}
+section.last .plans .price .p2 {
+  font-size: 30px;
+}
+section.last .plans .price .p3 {
+  font-size: 8px;
+  color: #141414;
+}
+section.last .plans .plan {
+  color: #141414;
+  font-size: 0.6rem;
+}
+section.last .plans button {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: whitesmoke;
+  background: rgb(51, 147, 237);
+  border: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 35px;
+}
+section.last .plans button:hover {
+  cursor: pointer;
+  color: rgb(51, 147, 237);
+  background: white;
+}
+section.last .plans .btn1, section.last .plans .btn1-1 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: black;
+  background: #f2f2f2;
+  border: 2px black solid;
+  padding: 10px 15px 10px 15px;
+  border-radius: 35px;
+}
+section.last .plans .btn1:hover, section.last .plans .btn1-1:hover {
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+section.last .plans .btn1-1 {
+  margin-top: 36px;
+}
+
+section.contact {
+  margin-top: 2em;
+  padding-top: 2em;
+  text-align: center;
+  background: #f2f2f2;
+}
+section.contact img {
+  display: none;
+}
+section.contact h2 {
+  text-transform: capitalize;
+}
+section.contact form .txt {
+  border: none;
+  width: 90%;
+  margin-bottom: 20px;
+  height: 25px;
+}
+section.contact form .txt:active {
+  border: none;
+}
+section.contact form .submit-btn {
+  color: white;
+  border: none;
+  background: black;
+  padding: 10px 20px;
+  border-radius: 45px;
+  margin-bottom: 20px;
+}
+section.contact form .submit-btn:hover {
+  cursor: pointer;
+  outline: 3px solid black;
+  color: black;
+  background: #f2f2f2;
+  transition-duration: 0.6s;
+}
+
+@media only screen and (min-width: 529px) {
+  section.info .testimonial {
+    display: flex;
+  }
+  section.info .col1 {
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+  section.info .col2 {
+    font-size: 2rem;
+  }
+  section.info .col2 .t1, section.info .col2 .t2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  section.info .col2 .desc {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+  section.services h2 {
+    text-align: center;
+  }
+  section.services .service-list {
+    text-align: center;
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  section.services .service-list .s1 {
+    flex: 1;
+  }
+  section.services .service-list .s2 {
+    flex: 1;
+  }
+  section.services .service-list .s3 {
+    flex: 1;
+  }
+  section.case-study nav.nav2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  section.case-study nav.nav2 ul {
+    display: flex;
+    font-size: 0.6rem;
+    justify-content: space-between;
+  }
+  section.case-study nav.nav2 ul li {
+    margin-right: 15px;
+  }
+  section.case-study nav.nav2 ul li:hover {
+    text-decoration: underline;
+    background: none;
+    cursor: pointer;
+  }
+  section.case-study nav.nav2 p {
+    font-size: 0.6rem;
+  }
+  section.case-study .ref-img {
+    display: block;
+  }
+  section.case-study .ref-img img {
+    flex: 1;
+    width: 150px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 615px) {
+  .header .hamburgerMenu {
+    display: none;
+  }
+  .header nav {
+    transform: translateX(0%);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+  .header nav #exit {
+    display: none;
+  }
+  .header nav ul {
+    display: flex;
+    margin: 0;
+  }
+  .header nav ul li:hover {
+    background: none;
+    text-decoration: underline;
+  }
+  .header nav ul li a {
+    margin-top: 0;
+    padding: 0.6em 0.8em;
+    font-size: 0.7rem;
+  }
+  section.case-study nav.nav2 ul li {
+    font-size: 0.7rem;
+  }
+  section.case-study nav.nav2 p {
+    font-size: 0.7rem;
+  }
+  section.case-study .ref-img {
+    display: flex;
+    justify-content: space-between;
+  }
+  section.our-experts .cover {
+    display: flex;
+    justify-content: center;
+  }
+  section.our-experts .cover .profile {
+    margin: 6px;
+  }
+  section.skills .flex1 {
+    display: flex;
+    height: 375px;
+  }
+  section.skills .flex1 .col-left {
+    flex: 1;
+    margin-left: 1px;
+  }
+  section.skills .flex1 .col-right {
+    flex: 1;
+  }
+  section.skills .flex1 .col-right .video {
+    height: 300px;
+  }
+  section.skills .ceo .feedback {
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*section.last{
+      margin-left:0;
+      margin-right:0;
+      .all-plans{
+          .non-premium{
+              display:flex;
+              justify-content: space-between;
+          }
+          .plans{
+              margin-left:0;
+          }
+      }
+  }*/
+}
+@media only screen and (min-width: 720px) {
+  section.contact .contact-full {
+    display: flex;
+  }
+  section.contact .contact-full .contact-right {
+    flex: 1;
+  }
+  section.contact .contact-full img {
+    display: block;
+    width: 20px;
+    flex: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

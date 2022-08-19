@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://cssbattle.dev/play/1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-editor.cm-focused {outline: 1px dotted #212121;}
+.ͼ1.cm-editor {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; min-height: 100%; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 4px;}
+.ͼ1 .cm-selectionLayer {z-index: -1; contain: size style;}
+.ͼ1 .cm-selectionBackground {position: absolute;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {z-index: 100; contain: size style; pointer-events: none;}
+.ͼ1.cm-focused .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {position: absolute; border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #444;}
+.ͼ1.cm-focused .cm-cursor {display: block;}
+.ͼ2 .cm-activeLine {background-color: #f3f9ff;}
+.ͼ3 .cm-activeLine {background-color: #223039;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; left: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1 .cm-selectionMatch {background-color: #99ff7780;}
+.ͼ1 .cm-searchMatch .cm-selectionMatch {background-color: transparent;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li {overflow-x: hidden; text-overflow: ellipsis; cursor: pointer; padding: 1px 3px; line-height: 1.2;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul {font-family: monospace; white-space: nowrap; overflow: hidden auto; max-width: 700px; max-width: min(700px, 95vw); min-width: 250px; max-height: 10em; list-style: none; margin: 0; padding: 0;}
+.ͼ2 .cm-tooltip-autocomplete ul li[aria-selected] {background: #17c; color: white;}
+.ͼ3 .cm-tooltip-autocomplete ul li[aria-selected] {background: #347; color: white;}
+.ͼ1 .cm-completionListIncompleteTop:before, .ͼ1 .cm-completionListIncompleteBottom:after {content: "···"; opacity: 0.5; display: block; text-align: center;}
+.ͼ1 .cm-tooltip.cm-completionInfo {position: absolute; padding: 3px 9px; width: max-content; max-width: 300px;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left {right: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right {left: 100%;}
+.ͼ2 .cm-snippetField {background-color: #00000022;}
+.ͼ3 .cm-snippetField {background-color: #ffffff22;}
+.ͼ1 .cm-snippetFieldPosition {vertical-align: text-top; width: 0; height: 1.15em; margin: 0 -0.7px -.7em; border-left: 1.4px dotted #888;}
+.ͼ1 .cm-completionMatchedText {text-decoration: underline;}
+.ͼ1 .cm-completionDetail {margin-left: 0.5em; font-style: italic;}
+.ͼ1 .cm-completionIcon {font-size: 90%; width: .8em; display: inline-block; text-align: center; padding-right: .6em; opacity: 0.6;}
+.ͼ1 .cm-completionIcon-function:after, .ͼ1 .cm-completionIcon-method:after {content: 'ƒ';}
+.ͼ1 .cm-completionIcon-class:after {content: '○';}
+.ͼ1 .cm-completionIcon-interface:after {content: '◌';}
+.ͼ1 .cm-completionIcon-variable:after {content: '𝑥';}
+.ͼ1 .cm-completionIcon-constant:after {content: '𝐶';}
+.ͼ1 .cm-completionIcon-type:after {content: '𝑡';}
+.ͼ1 .cm-completionIcon-enum:after {content: '∪';}
+.ͼ1 .cm-completionIcon-property:after {content: '□';}
+.ͼ1 .cm-completionIcon-keyword:after {content: '🔑︎';}
+.ͼ1 .cm-completionIcon-namespace:after {content: '▢';}
+.ͼ1 .cm-completionIcon-text:after {content: 'abc'; font-size: 50%; vertical-align: middle;}
+.ͼ1 .cm-tooltip {z-index: 100;}
+.ͼ2 .cm-tooltip {border: 1px solid #bbb; background-color: #f5f5f5;}
+.ͼ2 .cm-tooltip-section:not(:first-child) {border-top: 1px solid #bbb;}
+.ͼ3 .cm-tooltip {background-color: #333338; color: white;}
+.ͼ1 .cm-tooltip-arrow:before, .ͼ1 .cm-tooltip-arrow:after {content: ''; position: absolute; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:before {border-top: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:after {border-top: 7px solid #f5f5f5; bottom: 1px;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow {bottom: -7px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:before {border-bottom: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:after {border-bottom: 7px solid #f5f5f5; top: 1px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow {top: -7px;}
+.ͼ1 .cm-tooltip-arrow {height: 7px; width: 14px; position: absolute; z-index: -1; overflow: hidden;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:before {border-top-color: #333338; border-bottom-color: #333338;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:after {border-top-color: transparent; border-bottom-color: transparent;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼ1 .cm-foldPlaceholder {background-color: #eee; border: 1px solid #ddd; color: #888; border-radius: .2em; margin: 0 1px; padding: 0 1px; cursor: pointer;}
+.ͼ1 .cm-foldGutter span {padding: 0 1px; cursor: pointer;}
+.ͼ1e {color: #6c6783;}
+.ͼ1f {color: #ffcc99;}
+.ͼ1g {color: #eeebff;}
+.ͼ1h {color: #7a63ee;}
+.ͼ1i {color: #ffad5c;}
+.ͼ1j {color: #ffb870;}
+.ͼ1k {color: #9a86fd;}
+.ͼ1l {color: #e09142;}
+.ͼ1d {background-color: #2a2734; color: #6c6783;}
+.ͼ1d .cm-gutters {background-color: #2a2734; color: #545167;}
+.ͼ1d .cm-content {caret-color: #ffad5c;}
+.ͼ1d .cm-cursor, .ͼ1d .cm-dropCursor {border-left-color: #ffad5c;}
+.ͼ1d .cm-activeLine {background-color: #36334280;}
+.ͼ1d .cm-activeLineGutter {background-color: #36334280;}
+.ͼ1d.cm-focused .cm-selectionBackground .cm-selectionBackground, .ͼ1d .cm-selectionLayer .cm-selectionBackground, .ͼ1d ::selection {background-color: rgba(255, 255, 255, 0.1);}
+.ͼ2j {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2h {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2f {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2d {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2b {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ29 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ27 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ25 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ23 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ21 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ1z {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ1x {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ1v {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ1r {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5 {color: #7a757a;}
+.ͼ6 {text-decoration: underline;}
+.ͼ7 {text-decoration: underline; font-weight: bold;}
+.ͼ8 {font-style: italic;}
+.ͼ9 {font-weight: bold;}
+.ͼa {text-decoration: line-through;}
+.ͼb {color: #708;}
+.ͼc {color: #219;}
+.ͼd {color: #164;}
+.ͼe {color: #a11;}
+.ͼf {color: #e40;}
+.ͼg {color: #00f;}
+.ͼh {color: #30a;}
+.ͼi {color: #085;}
+.ͼj {color: #167;}
+.ͼk {color: #256;}
+.ͼl {color: #00c;}
+.ͼm {color: #940;}
+.ͼn {color: #f00;}
+.ͼ4 .cm-line ::selection {background-color: transparent !important;}
+.ͼ4 .cm-line::selection {background-color: transparent !important;}
+.ͼ4 .cm-line {caret-color: transparent !important;}
+</style><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta property="og:url" content="https://cssbattle.dev"><title>Target #1 (Simply Square) - CSSBattle</title><meta property="og:description" content="CSS Code Golfing game is here!"><meta name="twitter:card" content="summary_large_image"><link rel="shortcut icon" href="https://cssbattle.dev/images/logo-square.png"><meta property="og:image" content="https://cssbattle.dev/api/socialImage/target?id=1"><meta property="og:title" content="Target #1 (Simply Square) - CSSBattle"><style id="critical-css" type="ruby">/* CRITICAL CSS */
+          body {
+            background-color: #171d23;
+          }
+
+          body:after {
+            font-size: 1.5rem;
+            text-align: center;
+            font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
+              'Lucida Console', monospace;
+            color: #cbd1e1;
+            display: block;
+            content: 'Hang on! The battleground is getting setup...';
+            width: 400px;
+            position: fixed;
+            top: 40vh;
+            left: calc(50vw - 200px);
+            opacity: 0;
+            animation: 0.3s show ease forwards;
+            animation-delay: 1s;
+          }
+
+          @keyframes show {
+            to {
+              opacity: 1;
+            }
+          }</style><meta name="next-head-count" content="10"><link rel="preload" href="./Target #1 (Simply Square) - CSSBattle_files/848d7b465dfb2a00.css" as="style"><link rel="stylesheet" href="./Target #1 (Simply Square) - CSSBattle_files/848d7b465dfb2a00.css" data-n-g=""><link rel="preload" href="./Target #1 (Simply Square) - CSSBattle_files/c214a5fd74b2ca43.css" as="style"><link rel="stylesheet" href="./Target #1 (Simply Square) - CSSBattle_files/c214a5fd74b2ca43.css" data-n-p=""><noscript data-n-css=""></noscript><script type="text/javascript" async="" src="./Target #1 (Simply Square) - CSSBattle_files/analytics.js.download"></script><script defer="" nomodule="" src="./Target #1 (Simply Square) - CSSBattle_files/polyfills-c67a75d1b6f99dc8.js.download"></script><script src="./Target #1 (Simply Square) - CSSBattle_files/webpack-f1db8b04decb59dd.js.download" defer=""></script><script src="./Target #1 (Simply Square) - CSSBattle_files/framework-25ee7391691268aa.js.download" defer=""></script><script src="./Target #1 (Simply Square) - CSSBattle_files/main-18b0d38af79cc7b2.js.download" defer=""></script><script src="./Target #1 (Simply Square) - CSSBattle_files/_app-c36eb4b0eb275369.js.download" defer=""></script><script src="./Target #1 (Simply Square) - CSSBattle_files/154-1dc6e25ed87b66aa.js.download" defer=""></script><script src="./Target #1 (Simply Square) - CSSBattle_files/366-53ede1bfae6ead15.js.download" defer=""></script><script src="./Target #1 (Simply Square) - CSSBattle_files/836-978da43af69bec86.js.download" defer=""></script><script src="./Target #1 (Simply Square) - CSSBattle_files/[levelId]-c089865cbfe23554.js.download" defer=""></script><script src="./Target #1 (Simply Square) - CSSBattle_files/_buildManifest.js.download" defer=""></script><script src="./Target #1 (Simply Square) - CSSBattle_files/_ssgManifest.js.download" defer=""></script><link rel="stylesheet" type="text/css" href="./Target #1 (Simply Square) - CSSBattle_files/4cc2df09358305f9.css"><link as="script" rel="prefetch" href="./Target #1 (Simply Square) - CSSBattle_files/index-03e7285e69486df3.js.download"><link as="script" rel="prefetch" href="./Target #1 (Simply Square) - CSSBattle_files/learn-39a1596a95e2baab.js.download"><link as="script" rel="prefetch" href="./Target #1 (Simply Square) - CSSBattle_files/pro-fa5a3cf6336c7491.js.download"><link as="script" rel="prefetch" href="./Target #1 (Simply Square) - CSSBattle_files/tips-ab524622ee3c1205.js.download"><link as="script" rel="prefetch" href="./Target #1 (Simply Square) - CSSBattle_files/faqs-0327bbdf6b0ba61c.js.download"><link as="script" rel="prefetch" href="./Target #1 (Simply Square) - CSSBattle_files/about-875092442ca62f38.js.download"><link as="script" rel="prefetch" href="./Target #1 (Simply Square) - CSSBattle_files/become-a-sponsor-46f2c55fd9b46e19.js.download"><link as="script" rel="prefetch" href="./Target #1 (Simply Square) - CSSBattle_files/privacy-and-terms-e734c9aedc6c48fa.js.download"><link as="script" rel="prefetch" href="./Target #1 (Simply Square) - CSSBattle_files/[battleId]-54f2dd94d2d4aa17.js.download"></head><body class="level-page"><div id="__next"><div class="header"><div class="header__left"><h1 class="logo" title="CSSBattle"><span class="visually-hidden">CSSBattle</span><a href="https://cssbattle.dev/"></a></h1><div class="Header_breadcrumbs__mCYlG"><h2 class="level"><a href="https://cssbattle.dev/battle/1">Battle #1</a></h2><details class="dropdown-container"><summary class="dropdown-btn ">#1<span class="desktop-only">. Simply Square</span></summary><div class="dropdown-menu  "><a class="dropdown-menu__item" href="https://cssbattle.dev/play/1">#1. Simply Square</a><a class="dropdown-menu__item" href="https://cssbattle.dev/play/2">#2. Carrom</a><a class="dropdown-menu__item" href="https://cssbattle.dev/play/3">#3. Push Button</a><a class="dropdown-menu__item" href="https://cssbattle.dev/play/4">#4. Ups n Downs</a><a class="dropdown-menu__item" href="https://cssbattle.dev/play/5">#5. Acid Rain</a><a class="dropdown-menu__item" href="https://cssbattle.dev/play/6">#6. Missing Slice</a><a class="dropdown-menu__item" href="https://cssbattle.dev/play/7">#7. Leafy Trail</a><a class="dropdown-menu__item" href="https://cssbattle.dev/play/8">#8. Forking Crazy</a><a class="dropdown-menu__item" href="https://cssbattle.dev/play/9">#9. Tesseract</a><a class="dropdown-menu__item" href="https://cssbattle.dev/play/10">#10. Cloaked Spirits</a><a class="dropdown-menu__item" href="https://cssbattle.dev/play/11">#11. Eye of Sauron</a><a class="dropdown-menu__item" href="https://cssbattle.dev/play/12">#12. Wiggly Moustache</a></div></details></div></div><div class="header__right"><a class="button--cssbattle desktop-only" href="https://cssbattle.dev/learn">CSSBattle Learn</a><div class="desktop-only" style="display: inline-block;"><details class="dropdown-container"><summary class="dropdown-btn "><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 10px; margin-left: 0px;"><path fill="currentColor" d="M15.07,11.25L14.17,12.17C13.45,12.89 13,13.5 13,15H11V14.5C11,13.39 11.45,12.39 12.17,11.67L13.41,10.41C13.78,10.05 14,9.55 14,9C14,7.89 13.1,7 12,7A2,2 0 0,0 10,9H8A4,4 0 0,1 12,5A4,4 0 0,1 16,9C16,9.88 15.64,10.67 15.07,11.25M13,19H11V17H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"></path></svg><span class="">How to play</span></summary><div class="dropdown-menu  dropdown-menu--right dropdown-menu--text"><p class="para">The objective of the game is to write HTML/CSS to replicate the given target image in the least code possible.</p><p class="para">In the target page, start coding in the editor area on the left. As you start typing, the output area in the middle will start rendering your code. When you're confident that the output matches the target image, hit the <strong>Submit</strong> button to see your score.</p><h4>Important points to Note:</h4><ul class="unordered-list"><li>It is recommended to play on Chromium based browsers (Chrome/Safari) because that is what is used for scoring at the backend. Other browser may have some differences in how they render a particular code.</li><li>What you write in the editor, renders as it is. We make no change. This means you don't even get the <a href="https://www.w3.org/wiki/Doctypes_and_markup_styles" rel="external noopener noreferrer"><code>DOCTYPE</code></a></li><li>Since this is "CSS" battle, you are <strong>not allowed to use JavaScript or images in your code. In fact any external asset is not allowed.</strong> All code required to generate the target image has to be written in the given editor only.</li></ul><p class="para"> Now go and climb the leaderboards!</p></div></details></div><a href="https://cssbattle.dev/login" class="button"><div class="desktop-only">Sign In / Sign Up</div><span class="mobile-only">Login</span></a></div></div><div class="container container--fixed-height"><div class="container__item container__item--main container__item--editor"><div class="Editor_editor__32JYa"><div class="item__header  "><h3 class="header__title">editor</h3><p class="key-combo key-combo--header"> CTRL + SHIFT + E </p><div class="header__extra-info">559 characters</div></div><div class="cm-theme"><div class="cm-editor cm-focused ͼ1 ͼ3 ͼ4 ͼ2j ͼ1d"><div aria-live="polite" style="position: absolute; top: -10000px;"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 750.219px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement" style="height: 25.5938px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 25.5938px;">2</div><div class="cm-gutterElement" style="height: 25.5938px;">3</div><div class="cm-gutterElement" style="height: 25.5938px;">4</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 25.5938px;">5</div><div class="cm-gutterElement" style="height: 25.5938px;">6</div><div class="cm-gutterElement" style="height: 25.5938px;">7</div><div class="cm-gutterElement" style="height: 25.5938px;">8</div><div class="cm-gutterElement" style="height: 25.5938px;">9</div><div class="cm-gutterElement" style="height: 25.5938px;">10</div><div class="cm-gutterElement" style="height: 25.5938px;">11</div><div class="cm-gutterElement" style="height: 25.5938px;">12</div><div class="cm-gutterElement" style="height: 127.969px;">13</div><div class="cm-gutterElement" style="height: 25.5938px;">14</div><div class="cm-gutterElement" style="height: 25.5938px;">15</div><div class="cm-gutterElement" style="height: 179.156px;">16</div><div class="cm-gutterElement" style="height: 25.5938px;">17</div><div class="cm-gutterElement" style="height: 51.1875px;">18</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement" style="height: 25.5938px; margin-top: 29.5938px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement" style="height: 25.5938px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 25.5938px; margin-top: 25.5938px;"></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content cm-lineWrapping" style="tab-size: 4;" role="textbox" aria-multiline="true" aria-autocomplete="list"><div class="cm-line"><span class="ͼ1e">&lt;</span><span class="ͼ1g">div</span><span class="ͼ1e">&gt;</span><span class="ͼ1e">&lt;/</span><span class="ͼ1g">div</span><span class="ͼ1e">&gt;</span></div><div class="cm-line"><span class="ͼ1e">&lt;</span><span class="ͼ1g">style</span><span class="ͼ1e">&gt;</span></div><div class="cm-line">  <span class="ͼ1g">div</span> <span class="ͼ1e">{</span></div><div class="cm-line">    <span class="ͼ1k">margin</span><span class="ͼ1l">:</span><span class="ͼ1f">0</span><span class="ͼ1l">;</span></div><div class="cm-activeLine cm-line">    </div><div class="cm-line">    <span class="ͼ1k">width</span><span class="ͼ1l">:</span> <span class="ͼ1f">100</span><span class="ͼ1l">px</span><span class="ͼ1l">;</span></div><div class="cm-line">    <span class="ͼ1k">height</span><span class="ͼ1l">:</span> <span class="ͼ1f">100</span><span class="ͼ1l">px</span><span class="ͼ1l">;</span></div><div class="cm-line">    <span class="ͼ1k">background</span><span class="ͼ1l">:</span> #dd6b4d<span class="ͼ1l">;</span></div><div class="cm-line">  <span class="ͼ1e">}</span></div><div class="cm-line"><span class="ͼ1e">&lt;/</span><span class="ͼ1g">style</span><span class="ͼ1e">&gt;</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ1e">&lt;!-- OBJECTIVE --&gt;</span></div><div class="cm-line"><span class="ͼ1e">&lt;!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is --&gt;</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ1e">&lt;!-- SCORING --&gt;</span></div><div class="cm-line"><span class="ͼ1e">&lt;!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. --&gt;</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ1e">&lt;!-- IMPORTANT: remove the comments before submitting --&gt;</span></div></div><div class="cm-selectionLayer" aria-hidden="true"></div><div class="cm-cursorLayer" aria-hidden="true" style="animation-duration: 1200ms; animation-name: cm-blink2;"><div class="cm-cursor cm-cursor-primary" style="left: 81.2083px; top: 108.375px; height: 21.3333px;"></div></div></div></div></div><div class="editor-console  editor-console--success">No errors found</div></div> <div class="btn-group "><button type="button" class="button button--primary  hint--top-left" data-hint="Don&#39;t be afraid. You can submit multiple times">Submit (⌘+ENTER) </button></div></div><div class="container__item container__item--scrollable container__item--output"><div class="item__header  "><h3 class="header__title">output</h3><div class="header__extra-info"><div style="display:flex;gap:1rem;align-items:center;justify-content:flex-end;flex-direction:row"><label><input type="checkbox" checked="" value="true"> <!-- -->Slide &amp; Compare</label><label><input type="checkbox" value="true"> <!-- -->Diff</label></div></div></div><div class="item__content"><div><div class="target-container" style="position: relative; cursor: col-resize;"><div style="overflow: hidden; width: 100%; height: 100%; position: relative; z-index: 1; mix-blend-mode: normal; pointer-events: none;"><iframe title="Preview" style="background:white;width:400px;height:300px;border:0;outline:0" src="./Target #1 (Simply Square) - CSSBattle_files/saved_resource.html"></iframe></div><img alt="" src="./Target #1 (Simply Square) - CSSBattle_files/1.png" srcset="/targets/1@2x.png 2x" style="position: absolute; top: 0px; left: 0px; width: clamp(0px, 400px, 100%);"></div></div><div class="inner-header"><h4 class="header__title header__title--inner">Your Score</h4></div><div class="score-container"><div><p class="score-container__score-type">Last Score:</p><p class="score-container__score">Submit to get score</p></div><div><p class="score-container__score-type">High Score:</p><p class="score-container__score">-</p></div><div class="score-container__buttons"><button type="button" class="button   "><img class="button__img" src="./Target #1 (Simply Square) - CSSBattle_files/rank_w.svg" alt=""> <!-- -->Leaderboard<!-- --> </button></div></div></div></div><div class="container__item container__item--scrollable container__item--target"><div class="item__header  "><h3 class="header__title">Target</h3><div class="header__extra-info">400px x 300px</div></div><div class="item__content"><img alt="" width="400" class="levelpage__target" src="./Target #1 (Simply Square) - CSSBattle_files/1.png" srcset="/targets/1@2x.png 2x"><div class="inner-header"><h4 class="header__title header__title--inner">Colors To Use</h4><p class="key-combo key-combo--inner-header">CTRL + Shift + C</p></div><ul class="colors-list"><li><button type="button" aria-label="Copy color #5d3a3a" class="js-target-color colors-list__color" style="--color:#5d3a3a;">#5d3a3a</button></li><li><button type="button" aria-label="Copy color #b5e0ba" class="js-target-color colors-list__color" style="--color:#b5e0ba;">#b5e0ba</button></li></ul><div class="inner-header"><h4 class="header__title header__title--inner">Target Sponsor</h4></div><div class="sponsor-container"><div data-ea-publisher="cssbattle-dev" class="horizontal flat dark" data-ea-type="image"></div><div class="no-sponsor"><a href="https://cssbattle.dev/api/adRedirect?url=https%3A%2F%2Fwww.rootlearn.com%2Fbootcamp%2Fweb-dev%3Fsource%3Dcssbattletarget&amp;sponsorId=82" target="_blank" rel="noopener"><img src="./Target #1 (Simply Square) - CSSBattle_files/rootlearn-banner-target.png" style="max-width: 100%;"></a></div></div></div></div></div><div class="footer"><p>© <!-- -->2022<!-- --> CSSBattle</p><div class="footer__links"><div style="display:inline-block"><a style="display:inline-flex;align-items:center" href="https://cssbattle.dev/pro"><span>Upgrade to</span> <img height="18" class="pro-badge" style="margin-left:0.5rem" src="./Target #1 (Simply Square) - CSSBattle_files/pro-badge.svg" alt="Pro badge"></a><span aria-hidden="true" style="margin:0 0.8em">·</span></div><a href="https://cssbattle.dev/tips">Tips &amp; Tricks</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://cssbattle.dev/blog/">Blog</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://cssbattle.dev/faqs">FAQs</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://community.cssbattle.dev/" target="_blank" rel="external noopener noreferrer">Community</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://cssbattle.dev/about">About</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://cssbattle.dev/become-a-sponsor">Become a Sponsor</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://cssbattle.dev/privacy-and-terms">Privacy &amp; Terms</a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://discord.gg/rvqvbcFM86" target="_blank" rel="external noopener noreferrer" class="hint--top-left" aria-label="Join on Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;margin-right:0.5rem;margin-left:0" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M22,24L16.75,19L17.38,21H4.5A2.5,2.5 0 0,1 2,18.5V3.5A2.5,2.5 0 0,1 4.5,1H19.5A2.5,2.5 0 0,1 22,3.5V24M12,6.8C9.32,6.8 7.44,7.95 7.44,7.95C8.47,7.03 10.27,6.5 10.27,6.5L10.1,6.33C8.41,6.36 6.88,7.53 6.88,7.53C5.16,11.12 5.27,14.22 5.27,14.22C6.67,16.03 8.75,15.9 8.75,15.9L9.46,15C8.21,14.73 7.42,13.62 7.42,13.62C7.42,13.62 9.3,14.9 12,14.9C14.7,14.9 16.58,13.62 16.58,13.62C16.58,13.62 15.79,14.73 14.54,15L15.25,15.9C15.25,15.9 17.33,16.03 18.73,14.22C18.73,14.22 18.84,11.12 17.12,7.53C17.12,7.53 15.59,6.36 13.9,6.33L13.73,6.5C13.73,6.5 15.53,7.03 16.56,7.95C16.56,7.95 14.68,6.8 12,6.8M9.93,10.59C10.58,10.59 11.11,11.16 11.1,11.86C11.1,12.55 10.58,13.13 9.93,13.13C9.29,13.13 8.77,12.55 8.77,11.86C8.77,11.16 9.28,10.59 9.93,10.59M14.1,10.59C14.75,10.59 15.27,11.16 15.27,11.86C15.27,12.55 14.75,13.13 14.1,13.13C13.46,13.13 12.94,12.55 12.94,11.86C12.94,11.16 13.45,10.59 14.1,10.59Z"></path></svg></a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="https://twitter.com/css_battle" target="_blank" rel="external noopener noreferrer" class="hint--top-left" aria-label="Join on Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;margin-right:0.5rem;margin-left:0" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path></svg></a><span aria-hidden="true" style="margin:0 0.8em">·</span><a href="mailto:contact@cssbattle.dev" target="_blank" rel="external noopener noreferrer" class="hint--top-left" aria-label="Contact us"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;margin-right:0.5rem;margin-left:0" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"></path></svg></a></div></div><div class="sidebar-container "><div class="underlay"></div><div class="sidebar sidebar--left"><button class="sidebar__close"></button><div class="sidebar__content"></div></div></div><div class="sidebar-container "><div class="underlay"></div><div class="sidebar sidebar--right"><button class="sidebar__close"></button><div class="sidebar__content"></div></div></div><div class="sidebar-container "><div class="underlay"></div><div class="sidebar sidebar--left"><button class="sidebar__close"></button><div class="sidebar__content"><div><div class="item__header  "><h3 class="header__title">Last Submissions</h3><div class="header__extra-info">0 submissions</div></div><div class="item__content"><div class="submissions-container"><p class="section-helper">You don't have any submissions.</p><ul class="submissions-list"></ul></div></div></div></div></div></div><div class="sidebar-container "><div class="underlay"></div><div class="sidebar sidebar--left"><button class="sidebar__close"></button><div class="sidebar__content"></div></div></div><div class="Toastify"></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"levelIdParam":"1"},"__N_SSP":true},"page":"/play/[levelId]","query":{"levelId":"1"},"buildId":"kezFjYITRgBY71q8kXLGZ","assetPrefix":"/nextjs","isFallback":false,"gssp":true,"scriptLoader":[]}</script><script src="./Target #1 (Simply Square) - CSSBattle_files/js" async=""></script><next-route-announcer><p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;"></p></next-route-announcer><script src="./Target #1 (Simply Square) - CSSBattle_files/index-03e7285e69486df3.js.download"></script><script src="./Target #1 (Simply Square) - CSSBattle_files/learn-39a1596a95e2baab.js.download"></script><script src="./Target #1 (Simply Square) - CSSBattle_files/pro-fa5a3cf6336c7491.js.download"></script><script src="./Target #1 (Simply Square) - CSSBattle_files/tips-ab524622ee3c1205.js.download"></script><script src="./Target #1 (Simply Square) - CSSBattle_files/faqs-0327bbdf6b0ba61c.js.download"></script><script src="./Target #1 (Simply Square) - CSSBattle_files/about-875092442ca62f38.js.download"></script><script src="./Target #1 (Simply Square) - CSSBattle_files/become-a-sponsor-46f2c55fd9b46e19.js.download"></script><script src="./Target #1 (Simply Square) - CSSBattle_files/privacy-and-terms-e734c9aedc6c48fa.js.download"></script><script src="./Target #1 (Simply Square) - CSSBattle_files/[battleId]-54f2dd94d2d4aa17.js.download"></script></body></html>
